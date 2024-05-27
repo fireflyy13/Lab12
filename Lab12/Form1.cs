@@ -68,30 +68,6 @@ namespace Lab12
             return a;
         }
 
-        public void BubbleSort(int[] a)
-        {
-            int temp;
-            bool swapped;
-            for (int i = 0; i < a.Length - 1; i++)
-            {
-                swapped = false;
-                for (int j = 0; j < a.Length - i - 1; j++)
-                {
-                    if (a[j] > a[j + 1])
-                    {
-                        temp = a[j];
-                        a[j] = a[j + 1];
-                        a[j + 1] = temp;
-                        swapped = true;
-                    }
-                }
-                if (!swapped)
-                {
-                    break;
-                }
-            }
-        }
-
         public static void Swap(int[] a, int i, int j)
         {
             int temp = a[i];
